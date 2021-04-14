@@ -5,7 +5,7 @@
 }
 /* color pallette: - #96ffff #022449 #f27d42 #558dca #c8eff4*/
 body {
-  background-color: #c8eff4;
+  /* background-col; */
   font-family: "Poppins", sans-serif;
 }
 
@@ -41,7 +41,8 @@ form input{
   padding: 1rem;
   font-size: 1rem;
   border: none;
-  background: white;
+  /* background: #c8eff4; */
+  background-color: blanchedalmond;
   
 }
 
@@ -50,14 +51,15 @@ form button {
   font-size: 30px;
   border: none;
   color: #022449;
-  background: white;
+  background: blanchedalmond;
   cursor: pointer;
   transition: all 0.5 ease;
 }
 
 form button:hover {
   background: #022449;
-  color: white;
+  color:white ;
+ 
 }
 
 .todo-container {
@@ -73,23 +75,28 @@ form button:hover {
 
 .todo{
   margin: 0.5rem;
-  background: white;
+  /* background: white; */
   color: black;
   font-size: 1rem;
+  border-bottom: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: all 0.5s ease;
 }
 
-.todo li {
+.todo-text {
+ 
+  height: 100%;
+  padding: 0.5rem 1rem;
   flex: 1;
 }
+
 
 .trash-btn,
 .complete-btn {
   background: #f27d42;
- 
+  height: 100%;
   border: none;
   padding: 0.5rem;
   cursor: pointer;

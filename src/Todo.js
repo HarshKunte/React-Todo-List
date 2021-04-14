@@ -29,8 +29,10 @@ import db from './firebase';
 
     return (
         <div className={`todo  ${todo.todo.active ? '':'completed'}`}>
-
+        <div className="todo-text">
         <li className="todo-item">{todo.todo.todo}</li>
+        </div>
+            
         <button onClick={completeTodo}  className="complete-btn" title="Completed">
 
         <DoneAllOutlinedIcon style={{fill:"white",pointerEvents:"none"}}/>
