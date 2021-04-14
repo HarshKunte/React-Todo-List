@@ -21,7 +21,7 @@ function App() {
   }
 
   useEffect(() => {
-    db.collection('todos').orderBy('timestamp','desc').orderBy('active','desc').onSnapshot(snapshot =>{
+    db.collection('todos').orderBy('active','desc').orderBy('timestamp','desc').onSnapshot(snapshot =>{
       setTodos(snapshot.docs.map(doc =>({id:doc.id,todo:doc.data()})))
       
     })
